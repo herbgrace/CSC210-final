@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width", initial-scale="1.0">
+        <link rel="stylesheet" href="style2.css">
+
+        <title>Favorite Sites</title>
+    </head>
+
+    <header role="banner">
+        <div class="container">
+            <button class="theme-toggle" id="theme-toggle">Dark Mode</button>
+            <h1>Alex Thelen</h1>
+            <p class="tagline">Neumont Software Engineering Major</p>
+        </div>
+    </header>
+
+    <body>
+        <!-- HTML5 Semantic Navigation -->
+        <nav role="navigation" aria-label="Main navigation">
+            <div class="container">
+                <ul>
+                    <li><a href="index.html" aria-describedby="index-desc">Main Page</a></li>
+                    <li><a href="about.html" aria-describedby="about-desc">About Me</a></li>
+                    <li><a href="sites.html" aria-describedby="projects-desc">Favorite Sites</a></li>
+                    <li><a href="plans.html" aria-describedby="contact-desc">Future Plans</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- HTML5 Main Content -->
+        <main id="main-content" role="main">
+            <div class="container">
+                <!-- About Section with HTML5 semantic elements -->
+                <section id="sites" aria-labelledby="sites-heading">
+                    <h2 id="sites-heading">My Favorite Websites</h2>
+                    <div class="site-content">
+                        <img src="images/website.jpg" alt="website-image">
+                        <p>I didn't know what image to put on this page, so I made this.</p>
+                        <aside class="site-list" aria-labelledby="site-list">
+                            <h3 id="interests-heading">Here's my top 8:</h3>
+                            <ol>
+                                <li><a href="index.html" target="_blank">My Portfolio, obviously</a></li>
+                                <li><a href="https://youtube.com" target="_blank">Youtube</a></li>
+                                <li><a href="https://nytimes.com/crosswords" target="_blank">NYT Games</a></li>
+                                <li><a href="https://www.chunkbase.com" target="_blank">Chunkbase</a></li>
+                                <li><a href="https://www.w3schools.com" target="_blank">W3 Schools</a></li>
+                                <li><a href="https://www.stackoverflow.com/questions" target="_blank">Stack Overflow</a></li>
+                                <li><a href="https://www.wikipedia.org" target="_blank">Wikipedia</a></li>
+                                <li><a href="https://thesandwi.ch" target="_blank">The Sandwich</a></li>
+                            </ol>
+                        </aside>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </body>
+
+    <footer>
+        <p>Copyright ©2025 by Alex Thelen (Not Really)</p>
+    </footer>
+
+    <script src="main.js"></script>
+</html>

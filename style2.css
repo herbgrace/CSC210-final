@@ -1,0 +1,301 @@
+/* ========  CSS Variables ======== */
+:root {
+    --bg-secondary: rgb(236, 133, 243);
+    --text-primary: #000000;
+    --color-primary: #f054eb;
+    --color-secondary: #a0009b;
+    --color-accent: #ec6de7;
+    --background-image: url(images/gradient.jpg);
+}
+
+/* ========  Dark Theme Variables ======== */
+body.dark-theme {
+    --bg-secondary: #2d2d2d;
+    --text-primary: #e0e0e0;
+    --color-primary: #15f2f9;
+    --color-secondary: #21a3a8;
+    --color-accent: #3a3a3a;
+    --background-image: url(images/gradient2.jpg);
+}
+
+/* ========  Reset & Base ======== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: cursive, fantasy;
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    line-height: 1.6;
+    padding: 50px;
+    background-image: var(--background-image);
+    background-size: cover;
+}
+
+/* ======== Header ======== */
+header {
+    text-align: left;
+    background-color: var(--color-primary);
+    color: var(--text-primary);
+    padding: 25px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    width: 600px;
+    min-width: 600px;
+}
+
+header h1 {
+    font-size: 50px;
+}
+
+.tagline {
+    font-style: italic;
+    font-size: 25px;
+    margin-top: 15px;
+}
+
+/* ======== Dark Mode Button ======== */
+.theme-toggle {
+    position: left;
+    top: 125px;
+    left: 500px;
+    background: var(--color-secondary);
+    border: none;
+    color: var(--text-primary);
+    padding: 10px 25px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+    overflow: hidden;
+}
+
+.theme-toggle:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+body.dark-theme header {
+    background-color: var(--bg-secondary);
+}
+
+/* ======== Navigation ======== */
+nav ul {
+    position: absolute;
+    display: flex;
+    justify-content: left;
+    list-style: none;
+    margin: 10px 0 25px 0;
+    gap: 40px;
+    text-wrap: none;
+    overflow-wrap: break-word;
+    white-space: 0px;
+    overflow: hidden;
+    width: 500px;
+    min-width: 500px;
+    height: 50px;
+    min-height: 50px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--text-primary);
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color:#004a99;
+    text-decoration: underline;
+}
+
+/* ======== Cool Cat Picture ======== */
+.picture {
+    text-align: left;
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
+
+/* ======== Main Layout ======== */
+main {
+    max-width: 900px;
+    min-width: 900px;
+}
+
+.container {
+    max-width: 900px;
+    padding: 25px;
+}
+
+/* ======== Information Section ======== */
+#information {
+    background-color: var(--bg-secondary);
+    padding: 50px;
+    margin-bottom: 2rem;
+    border-left: 5px solid var(--color-primary);
+    border-radius: 5px;
+}
+
+.information-text p {
+    margin-bottom: 25px;
+}
+
+/* ======== Information Aside ======== */
+aside.grading {
+    background-color: var(--color-accent);
+    padding: 25px;
+    margin-top: 25px;
+    border-left: 4px solid var(--color-secondary);
+    border-radius: 4px;
+}
+
+aside.grading ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+aside.grading li {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 25px;
+}
+
+/* ======== About Section ======== */
+#about {
+    background-color: var(--bg-secondary);
+    padding: 40px;
+    margin-bottom: 50px;
+    border-left: 5px solid var(--color-primary);
+    border-radius: 5px;
+}
+
+.about-text p {
+    margin-bottom: 25px;
+}
+
+/* ======== Interests Aside ======== */
+aside.interests {
+    background-color: var(--color-accent);
+    padding: 25px;
+    margin-top: 25px;
+    border-left: 4px solid #004a99;
+    border-radius: 4px;
+}
+
+aside.interests table {
+    background-color:var(--bg-secondary);
+    border-radius: 4px;
+    padding: 15px;
+}
+
+aside.interests th, td {
+    border: 25px solid black;
+    padding: 15px;
+}
+
+aside.interests img {
+    margin-top: 25px;
+}
+
+/* ======== Sites ======== */
+#sites {
+    background-color: var(--bg-secondary);
+    padding: 40px;
+    margin-bottom: 50px;
+    border-left: 5px solid var(--color-primary);
+    border-radius: 5px;
+}
+
+/* ======== Sites Aside ======== */
+
+aside.site-list {
+    background-color: var(--color-accent);
+    padding: 25px;
+    margin-top: 25px;
+    border-left: 4px solid #004a99;
+    border-radius: 4px;
+}
+
+aside.site-list ol {
+    padding: 25px;
+    margin-left: 25px;
+}
+
+aside.site-list li {
+    margin-bottom: 15px;
+}
+
+#sites a {
+    color: var(--text-primary);
+    text-decoration: none;
+    padding: 15px;
+}
+
+#sites a:hover {
+    color: var(--color-secondary);
+    text-decoration: underline;
+}
+
+/* ======== Future Plans ======== */
+
+#plans {
+    background-color: var(--bg-secondary);
+    padding: 35px;
+    margin-bottom: 50px;
+    border-left: 5px solid var(--color-primary);
+    border-radius: 5px;
+}
+
+aside.future-plans {
+    background-color: var(--color-accent);
+    padding: 25px;
+    margin-top: 25px;
+    border-left: 4px solid #004a99;
+    border-radius: 4px;
+}
+
+/* ======== Headings ======== */
+h2, h3 {
+    color: var(--color-secondary);
+    margin-bottom: 25px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0px;
+    left: 0;
+    width: 1750px;
+    height: 150px;
+    text-align: center;
+    background-color: var(--color-accent);
+    color: var(--text-primary);
+    padding: 15px;
+}
+
+/* ======== Responsive Design ======== */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .theme-toggle {
+        position: static;
+        margin-bottom: 25px;
+    }
+}
+
+/* ======== Print Styles ======== */
+@media print {
+    .theme-toggle {
+        display: none;
+    }
+}

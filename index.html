@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width", initial-scale="1.0">
+        <meta name="description" content="CSC210 - Intro to Web Presentation and Development">
+        <meta name="keywords" content="Neumont, CSC210, web dev, web development, student, portfolio, HTML5, CSS3">
+        <meta name="author" content="Alex Thelen">
+
+        <!-- OG means Open graph, tags control for social medial channels -->
+        <meta property="og:title" content="CSC210 - Intro to Web Presentation and Development">
+        <meta property="og:description" content="Personal portfolio to showcase my web development and projects.">
+        <meta property="og:type" content="website">
+
+        <link rel="stylesheet" href="style2.css">
+
+        <title>Main Page</title>
+    </head>
+
+    <!-- HTML5 Semantic Banner -->
+    <header role="banner">
+        <div class="container">
+            <button class="theme-toggle" id="theme-toggle">Dark Mode</button>
+            <h1>Alex Thelen</h1>
+            <p class="tagline">Neumont Software Engineering Major</p>
+        </div>
+    </header>
+
+    <body>
+        <!-- HTML5 Semantic Navigation -->
+        <nav role="navigation" aria-label="Main navigation">
+            <div class="container">
+                <ul>
+                    <li><a href="index.html" aria-describedby="index-desc">Main Page</a></li>
+                    <li><a href="about.html" aria-describedby="about-desc">About Me</a></li>
+                    <li><a href="sites.html" aria-describedby="projects-desc">Favorite Sites</a></li>
+                    <li><a href="plans.html" aria-describedby="contact-desc">Future Plans</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="picture">
+            <!-- Cool cat picture I found -->
+            <img src="images/SlickMe.jpg" alt="Cool picture of me!">
+            <p>Welcome to my website, I've been expecting you.</p>
+        </div>
+
+        <!-- HTML5 Main Content -->
+        <main id="main-content" role="main">
+            <div class="container">
+                <section id="information">
+                    <h2 id="information-heading">Some Information</h2>
+                    <section id="information-text">
+                        <p>This website was created by me for the <em>CSC210: Intro to Web Development</em> class.</p>
+                        <p>It isn't laid out exactly how the assignment says, but that's because I wanted to have it organized slightly differently.</p>
+
+                        <aside class="grading" aria-labelledby="grading-heading">
+                            <h3>For the purpose of grading:</h3>
+                            <ul>
+                                <li>
+                                    <span role="img" aria-label="Home Page"></span>
+                                    Home Page -> Main Page
+                                </li>
+                                <li>
+                                    <span role="img" aria-label="Interests"></span>
+                                    Interests/Bio -> About Me
+                                </li>
+                                <li>
+                                    <span role="img" aria-label="Favorite Sites"></span>
+                                    Favorite Sites -> Favorite Sites
+                                </li>
+                                <li>
+                                    <span role="img" aria-label="Future Plans"></span>
+                                    Future Plans -> Future Plans
+                                </li>
+                            </ul>
+                        </aside>
+                    </section>
+                </section>
+            </div>
+        </main>
+    </body>
+
+    <footer>
+        <p>Copyright ©2025 by Alex Thelen (Not Really)</p>
+    </footer>
+
+    <script src="main.js"></script>
+</html>

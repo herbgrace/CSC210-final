@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width", initial-scale="1.0">
+        <link rel="stylesheet" href="style2.css">
+
+        <title>About Me</title>
+    </head>
+
+    <header role="banner">
+        <div class="container">
+            <button class="theme-toggle" id="theme-toggle">Dark Mode</button>
+            <h1>Alex Thelen</h1>
+            <p class="tagline">Neumont Software Engineering Major</p>
+        </div>
+    </header>
+
+    <body>
+        <!-- HTML5 Semantic Navigation -->
+        <nav role="navigation" aria-label="Main navigation">
+            <div class="container">
+                <ul>
+                    <li><a href="index.html" aria-describedby="index-desc">Main Page</a></li>
+                    <li><a href="about.html" aria-describedby="about-desc">About Me</a></li>
+                    <li><a href="sites.html" aria-describedby="projects-desc">Favorite Sites</a></li>
+                    <li><a href="plans.html" aria-describedby="contact-desc">Future Plans</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- HTML5 Main Content -->
+        <main id="main-content" role="main">
+            <div class="container">
+                <!-- About Section with HTML5 semantic elements -->
+                <section id="about" aria-labelledby="about-heading">
+                    <h2 id="about-heading">About Me</h2>
+                    <div class="about-content">
+                        <div class="about-text">
+                            <p>My name is Alex Thelen and I'm a sophomore at Neumont College of Computer Science.
+                                I've been using computers for my entire life and I absolutely love working with them.</p>
+                            <p>When I was trying to decide what career to go into, I was previously considering becoming a diesel mechanic.
+                                I like working hands-on with projects, so I enjoyed my time working at Kenworth, 
+                                but I eventually came to the conclusion that it wasn't what I wanted to do for a career.
+                            </p>
+                            <p>In my free time, I mostly enjoy playing Video Games and hanging out with friends.
+                                I regularly cycle between games, never staying on one for more than a couple months at most, 
+                                but there are still some that I would definitely call my favorites.
+                            </p>
+                        </div>
+
+                        <aside class="interests" aria-labelledby="interests-heading">
+                            <h3 id="interests-heading">My Interests</h3>
+                            <table id="interests-table">
+                                <tr>
+                                    <th>Rank</th>
+                                    <th>Video Games</th>
+                                    <th>Movies</th>
+                                    <th>Bands</th>
+                                </tr>
+                                <tr>
+                                    <td><strong>#1:</strong></td>
+                                    <td>Portal 2</td>
+                                    <td>Interstellar</td>
+                                    <td>Avenged Sevenfold</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>#2:</strong></td>
+                                    <td>Dark Souls 3</td>
+                                    <td>Inception</td>
+                                    <td>Slipknot</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>#3:</strong></td>
+                                    <td>Guitar Hero</td>
+                                    <td>Spongebob Movie</td>
+                                    <td>Megadeth</td>
+                                </tr>
+                            </table>
+
+                            <img src="images/midir.gif" alt="Midir Gif">
+                            <p>Darkeater Midir, my favorite boss from Dark Souls 3</p>
+
+                        </aside>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </body>
+
+    <footer>
+        <p>Copyright ©2025 by Alex Thelen (Not Really)</p>
+    </footer>
+
+    <script src="main.js"></script>
+</html>
