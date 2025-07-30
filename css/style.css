@@ -232,13 +232,8 @@ aside.site-list {
     border-radius: 4px;
 }
 
-aside.site-list ol {
-    padding: 1rem;
-    margin-left: 1rem;
-}
-
-aside.site-list li {
-    margin-bottom: 0.5rem;
+aside.site-list img {
+    margin-bottom: 1rem;
 }
 
 #sites a {
