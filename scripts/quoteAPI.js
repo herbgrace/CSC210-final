@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const image=document.getElementById("slideshow-image");
     const img_array=["images/cleo.jpg", "images/tonk1.jpg", "images/tonk2.jpg", "images/tonk3.jpg", "images/random1.jpg", "images/random2.jpg"];
     var index=1;
-    const interval = 2000;
+    const interval = 2500;
     function slide() {
         image.src = img_array[index++%img_array.length];
     }
