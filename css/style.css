@@ -145,6 +145,21 @@ aside.quote {
     align-items: center;
 }
 
+aside.slideshow {
+    background-color: var(--color-accent);
+    padding: 1rem;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+    border-left: 4px solid #004a99;
+    border-radius: 4px;
+    align-items: center;
+}
+
+aside.slideshow img {
+    max-width: 500px;
+    max-height: 500px;
+}
+
 aside.grading {
     background-color: var(--color-accent);
     padding: 1rem;
